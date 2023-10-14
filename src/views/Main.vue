@@ -4,7 +4,7 @@
         <template v-slot:prepend>
           <v-app-bar-nav-icon></v-app-bar-nav-icon>
         </template>
-        <v-btn prepend-icon="$vuetify" variant="tonal">
+        <v-btn prepend-icon="$vuetify" variant="tonal" href="/game" >
           게임하러가기
         </v-btn>
         <v-spacer/>
@@ -280,6 +280,11 @@
         },
       ],
     }),
+    methods: {
+      // onClick () {
+      //   this.snackbar = false
+      // },
+    },
   }
 </script>
 <style scoped>
