@@ -12,8 +12,13 @@ import { createApp } from 'vue'
 
 // Plugins
 import { registerPlugins } from '@/plugins'
-import './registerServiceWorker'
+import '../service-worker.js'
 
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('../service-worker.js').then(() => {
+    console.log("[good] Service Worker Registered")
+  })
+}
 
 
 const app = createApp(App)
