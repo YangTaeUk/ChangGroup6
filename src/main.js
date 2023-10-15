@@ -12,6 +12,9 @@ import { createApp } from 'vue'
 
 // Plugins
 import { registerPlugins } from '@/plugins'
+import './registerServiceWorker'
+
+
 
 const app = createApp(App)
 
